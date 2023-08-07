@@ -113,5 +113,21 @@ nav img{
     margin-right: 20px;
 }
 .mail{
-    width: 50px;
+    width: 30px;
 }
+.capsule-textfield {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 16px;
+    outline: none; 
+    background-color: #F79630;
+  }
+  .capsule-textfield:hover {
+    border-color: #23844C;
+  }
+  
+  .capsule-textfield:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 4px #007bff;
+  }
