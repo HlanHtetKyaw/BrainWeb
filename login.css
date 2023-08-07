@@ -1,0 +1,53 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #2385C4;
+}
+.container{
+    width:100%;
+    min-height: 100vh;
+    padding-left:5%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.top{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.language{
+    width: 100px;
+    margin: 30px 0;
+    color: white;
+}
+.lan_button{
+    width: 77px;
+    height: 38px;
+    outline: none;
+    border: 0;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    background: #DF5A1C;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.lan_button:hover{
+    background: #F6D448;
+    color: black;
+}
+.rows{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15% 0;
+}
+.col1{
+    flex-basis: 40%;
+    color: white;
+    margin-left: 100px;
+}
+.col1 h1{
+    font-size: 93px;
+}
