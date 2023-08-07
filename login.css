@@ -70,20 +70,26 @@ body{
 .outer-square{
     position: absolute;
     width: 474px;
-    height: 436px;
+    height: 526px;
     background-color: rgba(255, 255, 255, 0.5);
     border-radius: 25px;
     display: flex;
     align-items: center;
     margin-left: 15%;
+    transform: rotateY(-180deg);
+    transform-style: preserve-3d;
 }
-.outer-square .inner-square{
+.inner-square,.inner-square-back{
     position: absolute;
     width: 334px;
-    height: 343px;
+    height: 433px;
     background: white;
     border-radius: 25px;
     margin-left: 15%;
+    backface-visibility: hidden;
+}
+.inner-square-back{
+    transform: rotateY(180deg);
 }
 .fom{
     width:100%;
@@ -91,11 +97,12 @@ body{
     box-sizing: border-box;
     overflow: hidden;
     padding-left: 5%;
-    padding-top: 5%;
+    padding-top: 3%;
     overflow: hidden;
 }
 .brain{
     width: 60px;
+    padding-bottom: 3%;
     margin-left: 35%;
 }
 nav{
@@ -106,8 +113,11 @@ nav ul li{
     display: block;
     margin-bottom: 30px;
     display: flex;
-    margin-left: 10%;
+    margin-left: 2%;
     align-items: center;
+}
+nav ul li h3{
+    font-weight: normal;
 }
 nav img{
     margin-right: 20px;
@@ -117,11 +127,13 @@ nav img{
 }
 .capsule-textfield {
     padding: 8px 12px;
-    border: 1px solid #ccc;
+    text-align: center;
+    border: 1px solid #000000;
     border-radius: 20px;
     font-size: 16px;
     outline: none; 
     background-color: #F79630;
+    height: 44px;
   }
   .capsule-textfield:hover {
     border-color: #23844C;
@@ -131,3 +143,75 @@ nav img{
     border-color: #007bff;
     box-shadow: 0 0 4px #007bff;
   }
+/* Base styling for the capsule select container */
+.capsule-select {
+    position: relative;
+    display: inline-block;
+    border: 1px solid #000000;
+    border-radius: 20px;
+    padding: 8px 16px;
+    cursor: pointer;
+    background-color: #F79630;
+    font-size: 16px;
+    margin-left: 5px;
+  }
+
+  .confirm-pass{
+    margin-left: 55px;
+  }
+  
+  /* Styling for the selected option */
+  .selected-option {
+    display: inline-block;
+    color: #000000;
+  }
+  
+  /* Styling for the dropdown options */
+  .options {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    max-height: 160px;
+    overflow-y: auto;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+  }
+  .options li {
+    padding: 8px 16px;
+  }
+  
+  /* Optional styles for the hover effect on options */
+  .options li:hover {
+    background-color: #23844C;
+  }
+  .button-li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 20px;
+  }
+.sign-in-button,.sign-up-button,.guest_button{
+    width: 77px;
+    height: 38px;
+    outline: none;
+    border: 0;
+    color: white;
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.sign-in-button{
+    background: #23844C;
+}
+.sign-up-button{
+    background: #5271FF;
+}
+.guest_button{
+    background: #6E614D;
+}
