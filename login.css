@@ -51,3 +51,35 @@
 .col1 h1{
     font-size: 93px;
 }
+.col1::after{
+    content: '';
+    width: 17%;
+    height: 20px;
+    background: #F6D448;
+    position: absolute;
+    margin-left: 80px;
+}
+.col2{
+    position: relative;
+    flex-basis: 60%;
+    display: flex;
+    align-items: center;
+}
+.outer-square{
+    position: absolute;
+    width: 474px;
+    height: 436px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    margin-left: 15%;
+}
+.outer-square .inner-square{
+    position: absolute;
+    width: 334px;
+    height: 343px;
+    background: white;
+    border-radius: 25px;
+    margin-left: 15%;
+}
