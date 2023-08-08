@@ -48,33 +48,35 @@ body{
 .col1{
     flex-basis: 40%;
     color: white;
-    margin-left: 100px;
+    margin-right: 20%;
+    position: relative;
+    display: flex;
+    align-items: center;
 }
 .col1 h1{
     font-size: 93px;
 }
 .col1::after{
+    display: block;
     content: '';
-    width: 17%;
+    width: 60%;
     height: 20px;
     background: #F6D448;
     position: absolute;
-    margin-left: 80px;
+    margin-top: 220px;
+    margin-left: 100px;
+}
+.Web_Brain{
+    margin-left: 10%;
+    width: 50%;
 }
 .col2{
     position: relative;
     flex-basis: 60%;
     display: flex;
     align-items: center;
+    margin-right: 10%;
 }
-.outer-outer{
-    position: absolute;
-    width: 474px;
-    height: 526px;
-    display: flex;
-    align-items: center;
-    perspective: 1000px;
-} 
 .outer-square{
     position: absolute;
     width: 474px;
@@ -84,20 +86,30 @@ body{
     display: flex;
     align-items: center;
     margin-left: 15%;
-    /* transform-style: preserve-3d;
-    transition: all 1s; */
 }
-.inner-square,.inner-square-back{
+.inner-square{
+    position: absolute;
+    width: 334px;
+    height: 343px;
+    background: white;
+    border-radius: 25px;
+    margin-left: 15%;
+}
+.inner-square-back{
     position: absolute;
     width: 334px;
     height: 433px;
     background: white;
     border-radius: 25px;
     margin-left: 15%;
-    /* backface-visibility: hidden; */
+}
+.inner-square{
+    display: block;
+}
+.inner-square.show{
+    display: none;
 }
 .inner-square-back{
-    /* transform: rotateY(180deg); */
     display: none;
 }
 .inner-square-back.show {
@@ -209,7 +221,7 @@ nav img{
     margin-left: 40px;
     display: flex;
   }
-.sign-in-button,.sign-up-button,.guest_button{
+.sign-in-button,.sign-up-button,.guest_button,.real-sign-up-button{
     width: 77px;
     height: 38px;
     outline: none;
@@ -223,7 +235,7 @@ nav img{
 .sign-in-button{
     background: #23844C;
 }
-.sign-up-button{
+.sign-up-button, .real-sign-up-button{
     background: #5271FF;
 }
 .guest_button{
@@ -242,4 +254,30 @@ nav img{
 .back-but img{
     margin-left: 20%;
     width: 25px;
+}
+.rainBox{
+    position: fixed;
+    bottom: 0;
+    left:  0;
+    width: 100%;
+}
+.rain{
+    width: 100px;
+    height: 100px;
+}
+.bottom1{
+    display: flex;
+    width: 100%;
+}
+.square{
+    position: absolute;
+    width: 8%;
+    margin-left: 30%;
+    transform: translateY(-100px);
+}
+.question{
+    position: absolute;
+    width: 7%;
+    margin-left: 60%;
+    transform: translateY(-200px);
 }
