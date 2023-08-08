@@ -67,6 +67,14 @@ body{
     display: flex;
     align-items: center;
 }
+.outer-outer{
+    position: absolute;
+    width: 474px;
+    height: 526px;
+    display: flex;
+    align-items: center;
+    perspective: 1000px;
+} 
 .outer-square{
     position: absolute;
     width: 474px;
@@ -76,8 +84,9 @@ body{
     display: flex;
     align-items: center;
     margin-left: 15%;
-    transform: rotateY(-180deg);
     transform-style: preserve-3d;
+    transform: rotateY(0deg);
+    transition: all 1s;
 }
 .inner-square,.inner-square-back{
     position: absolute;
@@ -155,10 +164,6 @@ nav img{
     font-size: 16px;
     margin-left: 5px;
   }
-
-  .confirm-pass{
-    margin-left: 55px;
-  }
   
   /* Styling for the selected option */
   .selected-option {
@@ -195,6 +200,12 @@ nav img{
     display: inline-block;
     margin-left: 20px;
   }
+  .button-li-back{
+    list-style: none;
+    display: inline-block;
+    margin-left: 40px;
+    display: flex;
+  }
 .sign-in-button,.sign-up-button,.guest_button{
     width: 77px;
     height: 38px;
@@ -214,4 +225,18 @@ nav img{
 }
 .guest_button{
     background: #6E614D;
+}
+.back-but{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    outline: none;
+    border: 0;
+    cursor: pointer;
+    background: black;
+    margin-right: 15px;
+}
+.back-but img{
+    margin-left: 20%;
+    width: 25px;
 }

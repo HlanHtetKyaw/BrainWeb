@@ -29,3 +29,15 @@ for (let j = 0; j <= 18; j++) {
   // Append the option to the select element
   selectBox1.appendChild(option1);
 }
+
+const card = document.getElementById("card");
+
+function openSignUp(){
+    const currentRotation = parseFloat(getComputedStyle(card).transform.replace("none", "").split(",")[4]);
+    const newRotation = currentRotation - 180;
+    card.style.transform = `rotate(${newRotation}deg)`;
+    console.log("click");
+}
+function openSignIn(){
+    card.style.transform = "rotateY(0deg)";
+}

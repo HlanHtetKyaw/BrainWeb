@@ -1,81 +1,93 @@
 <html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Brain Buster</title>
-        <link rel="stylesheet" href="login.css">
-    </head>
-    <body>
-<div class="container">
-<div class="top">
-    <h3 class="language">Language: </h3>
-    <button class="lan_button">Eng</button>
-</div>
 
-<div class="rows">
-    <div class="col1">
-        <h1>BRAIN <br> BUSTER</h1>
-    </div>
-    <div class="col2">
-        <div class="outer-square">
-            <div class="inner-square">
-                <form class="fom">
-                    <img src="images/brain.png" class="brain">
-                    <nav>
-                        <ul>
-                            <li>
-                                <img src="images/mail.png" class="mail"><input type="email" class="capsule-textfield" placeholder="Enter your name or email">
-                            </li>
-                            <li>
-                                <img src="images/pass.png" class="mail"><input type="password" class="capsule-textfield" placeholder="Enter password">  
-                            </li>
-                            <li>
-                                <img src="images/age.png" class="mail">
-                                <h3>Select Your Age:</h3> 
-                                <select id="numberSelect"  class="capsule-select">
-                                </select> 
-                            </li>
-                            <li class="button-li">
-                                <button type="submit" class="sign-in-button">Sign In</button>
-                                <button type="submit" class="sign-up-button">Sign Up</button>
-                                <button type="submit" class="guest_button">Guest</button>
-                            </li>
-                        </ul>
-                    </nav>
-                </form>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brain Buster</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="top">
+            <h3 class="language">Language: </h3>
+            <button class="lan_button">Eng</button>
+        </div>
+
+        <div class="rows">
+            <div class="col1">
+                <h1>BRAIN <br> BUSTER</h1>
             </div>
-            <div class="inner-square-back">
-                <form class="fom">
-                    <img src="images/brain.png" class="brain">
-                    <nav>
-                        <ul>
-                            <li>
-                                <img src="images/mail.png" class="mail"><input type="email" class="capsule-textfield" placeholder="Enter your name or email">
-                            </li>
-                            <li>
-                                <img src="images/pass.png" class="mail"><input type="password" class="capsule-textfield" placeholder="Enter password">  
-                            </li>
-                            <li class="confirm-pass">
-                                <input type="password" class="capsule-textfield" placeholder="Confirm password">
-                            </li>
-                            <li>
-                                <img src="images/age.png" class="mail">
-                                <h3>Select Your Age:</h3> 
-                                <select id="numberSelect1"  class="capsule-select">
-                                </select> 
-                            </li>
-                            <li class="button-li">
-                                <button type="submit" class="sign-in-button">Sign In</button>
-                                <button type="submit" class="sign-up-button">Sign Up</button>
-                                <button type="submit" class="guest_button">Guest</button>
-                            </li>
-                        </ul>
-                    </nav>
-                </form>
+            <div class="col2">
+                <div class="outer-outer">
+                    <div class="outer-square" id="card">
+                        <div class="inner-square">
+                            <form class="fom">
+                                <img src="images/brain.png" class="brain">
+                                <nav>
+                                    <ul>
+                                        <li>
+                                            <img src="images/mail.png" class="mail"><input type="email"
+                                                class="capsule-textfield" placeholder="Enter your name or email">
+                                        </li>
+                                        <li>
+                                            <img src="images/pass.png" class="mail"><input type="password"
+                                                class="capsule-textfield" placeholder="Enter password">
+                                        </li>
+                                        <li>
+                                            <img src="images/age.png" class="mail">
+                                            <h3>Select Your Age:</h3>
+                                            <select id="numberSelect" class="capsule-select">
+                                            </select>
+                                        </li>
+                                        <li class="button-li">
+                                            <button type="submit" class="sign-in-button">Sign In</button>
+                                            <button type="submit" class="sign-up-button" onclick="openSignUp()">Sign
+                                                Up</button>
+                                            <button type="submit" class="guest_button">Guest</button>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </form>
+                        </div>
+                        <div class="inner-square-back">
+                            <form class="fom">
+                                <img src="images/brain.png" class="brain">
+                                <nav>
+                                    <ul>
+                                        <li>
+                                            <img src="images/mail.png" class="mail"><input type="email"
+                                                class="capsule-textfield" placeholder="Enter your name or email">
+                                        </li>
+                                        <li>
+                                            <img src="images/pass.png" class="mail"><input type="password"
+                                                class="capsule-textfield" placeholder="Enter password">
+                                        </li>
+                                        <li>
+                                            <img src="images/confirm-pass.png" class="mail"><input type="password"
+                                                class="capsule-textfield" placeholder="Confirm password">
+                                        </li>
+                                        <li>
+                                            <img src="images/age.png" class="mail">
+                                            <h3>Select Your Age:</h3>
+                                            <select id="numberSelect1" class="capsule-select">
+                                            </select>
+                                        </li>
+                                        <li class="button-li-back">
+                                            <button class="back-but" onclick="openSignIn()"><img
+                                                    src="images/back.png"></button>
+                                            <button type="submit" class="sign-up-button">Sign Up</button>
+                                            <button type="submit" class="guest_button">Guest</button>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-</div>
-</div>
     <script src="login.js"></script>
-    </body>
+</body>
+
 </html>
