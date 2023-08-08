@@ -31,12 +31,17 @@ for (let j = 0; j <= 18; j++) {
 }
 
 const card = document.getElementById("card");
-
+let expand = false;
 function openSignUp(){
-    const currentRotation = parseFloat(getComputedStyle(card).transform.replace("none", "").split(",")[4]);
-    const newRotation = currentRotation - 180;
-    card.style.transform = `rotate(${newRotation}deg)`;
+  if(!expand){
+    card.style.display='block';
+    expand=true;
     console.log("click");
+  }
+  else{
+    card.style.display='none';
+    expand=false;
+  }
 }
 function openSignIn(){
     card.style.transform = "rotateY(0deg)";

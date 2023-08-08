@@ -84,9 +84,8 @@ body{
     display: flex;
     align-items: center;
     margin-left: 15%;
-    transform-style: preserve-3d;
-    transform: rotateY(0deg);
-    transition: all 1s;
+    /* transform-style: preserve-3d;
+    transition: all 1s; */
 }
 .inner-square,.inner-square-back{
     position: absolute;
@@ -95,10 +94,11 @@ body{
     background: white;
     border-radius: 25px;
     margin-left: 15%;
-    backface-visibility: hidden;
+    /* backface-visibility: hidden; */
 }
-.inner-square-back{
-    transform: rotateY(180deg);
+.inner-square-back,#card{
+    /* transform: rotateY(180deg); */
+    display: none;
 }
 .fom{
     width:100%;
