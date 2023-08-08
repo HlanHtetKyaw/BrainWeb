@@ -96,9 +96,12 @@ body{
     margin-left: 15%;
     /* backface-visibility: hidden; */
 }
-.inner-square-back,#card{
+.inner-square-back{
     /* transform: rotateY(180deg); */
     display: none;
+}
+.inner-square-back.show {
+    display: block;
 }
 .fom{
     width:100%;

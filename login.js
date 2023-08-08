@@ -31,15 +31,18 @@ for (let j = 0; j <= 18; j++) {
 }
 
 const card = document.getElementById("card");
+const signUpBtn = document.querySelector('.sign-up-button')
 let expand = false;
-function openSignUp(){
+signUpBtn.addEventListener('click',openSignUp)
+function openSignUp(e){
+  e.preventDefault();
   if(!expand){
-    card.style.display='block';
+    card.classList.add('show')
     expand=true;
     console.log("click");
   }
   else{
-    card.style.display='none';
+    card.classList.remove('show')
     expand=false;
   }
 }
