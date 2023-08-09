@@ -76,7 +76,11 @@ body{
     display: flex;
     align-items: center;
     margin-right: 10%;
+<<<<<<< Updated upstream
     z-index: 9999;
+=======
+     z-index: 9999;
+>>>>>>> Stashed changes
 }
 .outer-square{
     position: absolute;
