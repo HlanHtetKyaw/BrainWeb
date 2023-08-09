@@ -444,4 +444,19 @@ nav img{
         width: 150px;
         transform: translateY(200px);
     }
+    .question{
+        display: none;
+    }
+    .donut{
+        display: none;
+    }
+    .rain{
+        width: 10%;
+        height: 10%;
+    }
+}
+@media only screen and (max-width:600px) {
+    .tabBrain{
+        width: 100px;
+    }
 }
