@@ -458,6 +458,7 @@ nav img{
 @media only screen and (min-width:375px) {
     .tabBrain{
         transform: translateX(-10px);
+        width: 100px;
     }
     .col2{
         margin-top: 200px;
@@ -465,15 +466,7 @@ nav img{
     .col1{
         transform: translateY(-50px);
     }
-}
-@media only screen and (max-width:375px) {
-    .tabBrain{
-        transform: translateX(-10px);
-    }
-    .col2{
-        margin-top: 200px;
-    }
-    .col1{
-        transform: translateY(-50px);
+    .moon{
+        transform: translate(20px);
     }
 }
