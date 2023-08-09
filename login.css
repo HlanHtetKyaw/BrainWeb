@@ -459,4 +459,10 @@ nav img{
     .tabBrain{
         width: 100px;
     }
+    .col2{
+        margin-top: 200px;
+    }
+    .col1{
+        transform: translateY(-50px);
+    }
 }
