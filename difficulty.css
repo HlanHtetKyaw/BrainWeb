@@ -53,6 +53,10 @@ body{
     border-radius: 25px;
     cursor: pointer;
 }
+.lan-but:hover{
+    background: #F6D448;
+    color: black;
+}
 .dTitle{
     display: flex;
     max-width: 100%;
@@ -129,6 +133,15 @@ body{
         width: 40%;
         height: inherit;
     }
+    .easyS:hover{
+        background-color: #8CE8B3;
+    }
+    .normalS:hover{
+        background-color: #BBBAB5;
+    }
+    .difficultS:hover{
+        background-color: #FA7F7F;
+    }
     .BE{
         width: 70.5%;
         height: 100%;
@@ -148,7 +161,7 @@ body{
         content: '';
         background-color: white;
         width: 10vw;
-        height: 5px;
+        height: 0.3vw;
     }
     .Under{
         width: 100%;
